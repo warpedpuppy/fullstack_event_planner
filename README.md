@@ -4,9 +4,8 @@ full stack application that uses full calendar
 
 creates events, places them on calendar, can delete/edit them
 
-```html
-<span style="color:red;">todo:</span>
-```
+todo:
+
 1. flesh out these instructions
 1. remove bootstrap, create style
 
