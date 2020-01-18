@@ -1,10 +1,10 @@
 import React from 'react';
-import DemoApp from '../components/DemoApp';
+import CalendarModule from '../components/CalendarModule';
 
 export default class Calendar extends React.Component {
   render() {
     return (
-      <DemoApp />
+      <CalendarModule />
     );
   }
 }
