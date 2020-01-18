@@ -8,6 +8,8 @@ todo:
 
 1. flesh out these instructions
 1. remove bootstrap, create style
+1. create a confirmation message after event sucessfully added.
+1. clean all code
 
 
 instructions: 
