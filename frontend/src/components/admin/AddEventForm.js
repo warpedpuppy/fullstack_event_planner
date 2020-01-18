@@ -50,7 +50,7 @@ export default class AddEventForm extends React.Component {
         e.preventDefault();
 
         if (!this.state.photoSizeCheck) return;
-        let fileName = 
+
         e.target.title.value = '';
         e.target.event_description.value = '';
         e.target.event_date.value = '';

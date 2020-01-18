@@ -9,7 +9,7 @@ export default class EventPage extends React.Component {
         return (
             <>
                 <h1>{this.context.events[id].title}</h1>
-                <img src={this.context.events[id].img_url} />
+                <img src={this.context.events[id].img_url} alt="event"/>
             </>
         )
     }

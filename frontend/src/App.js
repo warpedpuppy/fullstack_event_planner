@@ -42,7 +42,6 @@ class App extends React.Component {
 
   setEvents = (events) => {
     this.setState({ events });
-
     const arr = Object.keys(events).map(event => {
         return {
           date: events[event].event_date,
@@ -50,7 +49,6 @@ class App extends React.Component {
           id: events[event].id
         }
       });
-    console.log(arr)
     this.setState({ calendarEvents: arr });
   }
 

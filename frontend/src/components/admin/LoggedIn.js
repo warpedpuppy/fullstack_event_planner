@@ -1,16 +1,11 @@
 import React from 'react';
-import Uploader from './Upload';
 import AddEventForm from './AddEventForm';
 import DeleteEditEvents from './DeleteEditEvents';
-import AllPhotos from './AllPhotos';
 import './LoggedIn.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 export default class LoggedIn extends React.Component {
-  state = {
-
-  }
 
   makeActive = (e) => {
     e.preventDefault();
