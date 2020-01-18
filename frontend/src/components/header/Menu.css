@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    margin: 5px 20px;
+}
+nav button {
+    height: 20px;
+    font-size: 10px;
+    border: orange;
+    color: orange;
+    border-radius: 3px;
+    cursor: pointer;
+}

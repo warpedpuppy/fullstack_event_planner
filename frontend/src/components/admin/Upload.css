@@ -1,0 +1,13 @@
+#image-upload {
+    display:block;
+    width: 300px;
+    border: 1px solid black;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+#image-upload img,
+#image-upload input {
+    display:block;
+    margin: 20px 0;
+}

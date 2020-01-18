@@ -1,0 +1,14 @@
+.card {
+    flex: 0 0 auto;
+    margin: 0 15px;
+}
+.event-card {
+    border: 1px solid lightgray;
+    margin: 20px;
+    display: flex;
+}
+.event-card img {
+   width: 150px;
+   height: auto;
+
+}

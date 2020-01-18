@@ -1,0 +1,7 @@
+.all-events {
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  
+}

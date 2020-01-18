@@ -1,0 +1,24 @@
+.admin-shell {
+    margin: 20px auto;
+    text-align: center;
+}
+.tabs button {
+    cursor: pointer;
+}
+.tab-body-shell {
+    position: relative;
+    width: 1000px;
+    margin: 10px auto;
+}
+.tab-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    border: 1px solid black;
+    width: 1000px;
+
+}
+.tab-body.active {
+    display:block;
+}
