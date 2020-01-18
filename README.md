@@ -4,7 +4,7 @@ full stack application that uses full calendar
 
 creates events, places them on calendar, can delete/edit them
 
-todo:
+! todo:
 1. flesh out these instructions
 1. remove bootstrap, create style
 
