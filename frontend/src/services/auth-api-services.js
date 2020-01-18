@@ -2,17 +2,6 @@ import config from '../config';
 import TokenService from './token-service';
 
 const AuthApiService = {
-  showLoginForm(code) {
-    return fetch(`${config.API_ENDPOINT}/auth/show-login-form`, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({ code }),
-    })
-      .then((result) => result.json())
-      .then((resultJson) => resultJson);
-  },
   postLogin(password) {
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
       method: 'POST',
