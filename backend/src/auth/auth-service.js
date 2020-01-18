@@ -9,23 +9,10 @@ const AuthService = {
           algorithm: 'HS256',
         })
     },
-    comparePasswords(password, hash) {
-      return bcrypt.compare(password, hash)
-    },
-    parseBasicToken(token) {
-        return Buffer
-          .from(token, 'base64')
-          .toString()
-    },
     verifyJwt(token) {
         return jwt.verify(token, config.JWT_SECRET, {
           algorithms: ['HS256'],
         })
-      },
-    getAdminData(db) {
-        return db('admin_data')
-          .where({ user_name: "admin" })
-          .first()
       },
 }
 
