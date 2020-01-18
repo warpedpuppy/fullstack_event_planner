@@ -4,9 +4,12 @@ full stack application that uses full calendar
 
 creates events, places them on calendar, can delete/edit them
 
-
+todo:
+1. flesh out these instructions
+1. remove bootstrap, create style
 
 instructions: 
+
 1. first go to AWS and sign up for an S3 bucket, you need to get four pieces of information:
     1. the secret access key
     1. the not secret access key
@@ -21,6 +24,9 @@ instructions:
     1. run  "yarn". 
 
     1. when that is done, run an "yarn run dev".
+
+1. Make the tables in the database
+    1. using the files in backend/migrations, run "yarn run migrate" to create the tables. 
 
 1. frontend:
     1. open a new terminal window 
