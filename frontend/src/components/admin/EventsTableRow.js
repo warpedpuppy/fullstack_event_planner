@@ -31,9 +31,7 @@ export default class EventsTableRow extends React.Component {
         const fileNames = EventServices.createFileNames(obj, 'new-image');
         obj.img_url = fileNames.img_url;
         UploadService.initUpload('new-image', fileNames.imageName, this.stopEditMode)
-      } else {
-        this.context.editEvents(this.props.id, obj)
-      }
+      } 
 
       EventServices.updateEvent(this.props.id, obj)
         .then((result) => {console.log(result); this.stopEditMode();})
