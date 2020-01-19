@@ -53,6 +53,7 @@ class App extends React.Component {
   }
 
   editEvents = (id, edited_event) => {
+    //we need to have this wait until after the photo upload
     let events = Object.assign({}, this.state.events)
     events[id] = Object.assign({}, this.state.events[id], edited_event);
     this.setState({ events });
