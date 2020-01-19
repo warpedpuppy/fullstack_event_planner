@@ -61,10 +61,12 @@ eventsRouter
 
       //housekeeping: delete photos that aren't being used from s3 and db
       EventsServices.deleteUnusedPhotos(db, photos)
-
       res
       .status(200)
-      .json({photos: photos.filter(photo => photo.title !== null)})
+      .json({success: true})
+      // res
+      // .status(200)
+      // .json({photos: photos.filter(photo => photo.title !== null)})
     })
     .catch( error => {
       res
@@ -75,13 +77,13 @@ eventsRouter
   .get('/events', (req, res) => {
     EventsServices.getEvents(req.app.get('db'))
     .then( events => {
+
       let obj = {};
       events.forEach(event => {
         if(!obj[event.id]) {
           obj[event.id] = event
         }
       })
-      console.log(obj)
       res
       .status(200)
       .json({events: obj})

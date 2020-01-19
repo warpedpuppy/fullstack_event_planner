@@ -10,6 +10,7 @@ todo:
 1. remove bootstrap, create style
 1. create a confirmation message after event sucessfully added.
 1. clean all code
+1. set up tests
 
 
 instructions: 
@@ -30,6 +31,7 @@ instructions:
     1. when that is done, run an "yarn run dev".
 
 1. Make the tables in the database
+    1. make sure that the "DATABASE_URL" field in the backend .env file is filled out
     1. using the files in backend/migrations, run "yarn run migrate" to create the tables. 
 
 1. frontend:

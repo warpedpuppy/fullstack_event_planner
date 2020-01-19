@@ -50,7 +50,6 @@ const EventsServices = {
         } else { console.log('s3 success data response', data) }
       })
     }
-   
     
     return db
       .from('events_photos')

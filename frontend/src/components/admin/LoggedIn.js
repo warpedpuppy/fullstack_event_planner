@@ -4,13 +4,13 @@ import DeleteEditEvents from './DeleteEditEvents';
 import './LoggedIn.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-
+import EventServices from '../../services/events-services';
 export default class LoggedIn extends React.Component {
 
-  makeActive = (e) => {
-    e.preventDefault();
-    document.querySelector('.active').classList.remove('active');
-    document.getElementById(e.currentTarget.name).classList.add('active');
+
+  componentDidMount () {
+    // this will clean out unused photos
+    EventServices.getAllPhotos()
   }
 
   render() {
